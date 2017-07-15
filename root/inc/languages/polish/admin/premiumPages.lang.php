@@ -25,6 +25,7 @@ $l['premiumPagesDesc'] = 'Strony o ograniczonym dostępie.';
 $l['premiumPagesAdminList'] = 'Lista stron premium';
 $l['premiumPagesAdminAdd'] = 'Dodaj stronę premium';
 $l['premiumPagesAdminEdit'] = 'Edytuj stronę premium';
+$l['premiumPagesAdminSave'] = 'Zapisz';
 
 $l['premiumPagesAdminInfoAdd'] = 'Strona premium została zapisana';
 $l['premiumPagesAdminInfoNoResults'] = 'Brak stron';

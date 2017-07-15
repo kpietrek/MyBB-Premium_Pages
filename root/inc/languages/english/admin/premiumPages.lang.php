@@ -25,6 +25,7 @@ $l['premiumPagesDesc'] = 'Special pages with restricted access.';
 $l['premiumPagesAdminList'] = 'Pages list';
 $l['premiumPagesAdminAdd'] = 'Add page';
 $l['premiumPagesAdminEdit'] = 'Edit page';
+$l['premiumPagesAdminSave'] = 'Save';
 
 $l['premiumPagesAdminInfoAdd'] = 'Page has been saved';
 $l['premiumPagesAdminInfoNoResults'] = 'No pages';

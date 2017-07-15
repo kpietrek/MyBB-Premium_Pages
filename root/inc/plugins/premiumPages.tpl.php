@@ -35,7 +35,6 @@ class premiumPagesActivator
         global $db;
         
         self::$tpl[] = array( 
-            "tid"		=> NULL,
             "title"		=> 'premiumPages_pageBody',
             "template"	=> $db->escape_string('
 <html>

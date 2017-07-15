@@ -278,7 +278,7 @@ if ($mybb->input['action'] == "edit")
     $form_container->end();
 
     echo $form->generate_hidden_field("id", $row['id']);
-    $buttons[] = $form->generate_submit_button("Zapisz");
+    $buttons[] = $form->generate_submit_button($lang->premiumPagesAdminSave);
 
     $form->output_submit_wrapper($buttons);
     $form->end();
@@ -293,13 +293,13 @@ if (!$mybb->input['action'])
     $page->output_nav_tabs($sub_tabs, 'idoard');
 
     $table = new Table;
-    $table->construct_header("Nazwa", array("class" => "align_center"));
-    $table->construct_header("Min. postów", array("class" => "align_center"));
-    $table->construct_header("Czas - post", array("class" => "align_center"));
-    $table->construct_header("Czas - rejestracja", array("class" => "align_center"));
-    $table->construct_header("Max. warn", array("class" => "align_center"));
-    $table->construct_header("Link", array("class" => "align_center"));
-    $table->construct_header("Opcje", array("class" => "align_center", "colspan" => 2));
+    $table->construct_header($lang->premiumPagesHeaderName, array("class" => "align_center"));
+    $table->construct_header($lang->premiumPagesHeaderMinPosts, array("class" => "align_center"));
+    $table->construct_header($lang->premiumPagesHeaderTimePost, array("class" => "align_center"));
+    $table->construct_header($lang->premiumPagesHeaderTimeRegister, array("class" => "align_center"));
+    $table->construct_header($lang->premiumPagesHeaderMaxWarn, array("class" => "align_center"));
+    $table->construct_header($lang->premiumPagesHeaderLink, array("class" => "align_center"));
+    $table->construct_header($lang->premiumPagesHeaderOptions, array("class" => "align_center", "colspan" => 2));
 
     $result = $db->simple_select('premium_pages', '*');
     if ($db->num_rows($result))

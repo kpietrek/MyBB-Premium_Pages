@@ -28,14 +28,16 @@ if (!defined("IN_MYBB")) {
  * Create plugin object
  *
  */
-$plugins->add_hook("global_start", ['premiumPages', 'addHooks']);
+$plugins->add_hook('admin_config_menu', ['premiumPages', 'adminLink']);
+$plugins->add_hook('admin_config_action_handler', ['premiumPages', 'adminHandler']);
+$plugins->add_hook('pre_output_page', ['premiumPages', 'pluginThanks']);
 
 
 function premiumPages_info()
 {
     global $lang;
 
-    $lang->load("unreadPosts");
+    $lang->load("premiumPages");
 
     return Array(
         "name" => $lang->premiumPagesName,
@@ -89,16 +91,6 @@ function premiumPages_deactivate()
 // Plugin Class
 class premiumPages
 {
-
-    public static function addHooks()
-    {
-        global $plugins;
-
-        $plugins->add_hook('admin_config_menu', ['premiumPages', 'adminLink']);
-        $plugins->add_hook('admin_config_action_handler', ['premiumPages', 'adminHandler']);
-        $plugins->add_hook('pre_output_page', ['premiumPages', 'pluginThanks']);
-    }
-
 
     public static function adminLink(&$sub_menu)
     {
