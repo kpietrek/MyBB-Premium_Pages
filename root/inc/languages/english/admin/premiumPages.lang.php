@@ -23,23 +23,28 @@ $l['premiumPagesName'] = 'Premium Pages';
 $l['premiumPagesDesc'] = 'Special pages with restricted access.';
 
 $l['premiumPagesAdminList'] = 'Pages list';
-$l['premiumPagesAdminAdd'] = 'Add page';
 $l['premiumPagesAdminEdit'] = 'Edit page';
 $l['premiumPagesAdminSave'] = 'Save';
 
-$l['premiumPagesAdminInfoAdd'] = 'Page has been saved';
+$l['premiumPagesAdminInfoSave'] = 'Page has been saved';
 $l['premiumPagesAdminInfoNoResults'] = 'No pages';
 
 $l['premiumPagesAdminAll'] = 'All';
-$l['premiumPagesAdminMinutes'] = 'Minutes';
-$l['premiumPagesAdminHours'] = 'Hours';
-$l['premiumPagesAdminDays'] = 'Days';
+$l['premiumPagesTime_' . \premiumPages::TYPE_MINUTE] = 'Minutes';
+$l['premiumPagesTime_' . \premiumPages::TYPE_HOUR] = 'Hours';
+$l['premiumPagesTime_' . \premiumPages::TYPE_DAY] = 'Days';
 
 $l['premiumPagesFormData'] = 'Data';
-$l['premiumPagesFormName'] = 'Name:';
+$l['premiumPagesFormName'] = 'Name';
 $l['premiumPagesFormNameDesc'] = 'Page name.';
 
-$l['premiumPagesFormContent'] = 'Content:';
+$l['premiumPagesFormEnabled'] = 'Enable page';
+$l['premiumPagesFormEnabledDesc'] = 'Enable or disable page.';
+
+$l['premiumPagesFormMycode'] = 'Page MyCode';
+$l['premiumPagesFormMycodeDesc'] = 'Allows to use MyCode on page.';
+
+$l['premiumPagesFormContent'] = 'Content';
 $l['premiumPagesFormContentDesc'] = 'Page content.';
 
 $l['premiumPagesFormGroups'] = 'Allowed usergroups';
@@ -48,25 +53,27 @@ $l['premiumPagesFormGroupsDesc'] = 'Allowed usergroups.';
 $l['premiumPagesFormGroupsAllowed'] = 'Groups without check restrictions';
 $l['premiumPagesFormGroupsAllowedDesc'] = 'Groups without check restrictions.';
 
-$l['premiumPagesFormMinPosts'] = 'Minimum posts:';
+$l['premiumPagesFormMinPosts'] = 'Minimum posts';
 $l['premiumPagesFormMinPostsDesc'] = 'User minimum posts.';
 
-$l['premiumPagesFormMinTimePost'] = 'Minimal time from last user post:';
+$l['premiumPagesFormMinTimePost'] = 'Minimal time from last user post';
 $l['premiumPagesFormMinTimePostDesc'] = 'Minimal time from last user post.';
 
 $l['premiumPagesFormMinTimePostType'] = 'Minimal post time type';
 $l['premiumPagesFormMinTimePostTypeDesc'] = 'Minimal post time type.';
 
-$l['premiumPagesFormMinTimeRegister'] = 'Minimum time from register:';
+$l['premiumPagesFormMinTimeRegister'] = 'Minimum time from register';
 $l['premiumPagesFormMinTimeRegisterDesc'] = 'Minimum time from register.';
 
 $l['premiumPagesFormMinTimeRegisterType'] = 'Minimal register time type';
 $l['premiumPagesFormMinTimeRegisterTypeDesc'] = 'Minimal register time type.';
 
-$l['premiumPagesFormMaxWarn'] = 'Max warn level:';
+$l['premiumPagesFormMaxWarn'] = 'Max warn level';
 $l['premiumPagesFormMaxWarnDesc'] = 'Maxiumum user warn level.';
 
 $l['premiumPagesFormEdit'] = 'Edit';
+$l['premiumPagesFormDelete'] = 'Delete';
+$l['premiumPagesFormConfirm'] = 'Are you sure you want to delete page?';
 
 $l['premiumPagesHeaderName'] = 'Name';
 $l['premiumPagesHeaderMinPosts'] = 'Min. posts';

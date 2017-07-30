@@ -35,16 +35,18 @@ class premiumPagesInstaller
 
         $sql = "CREATE TABLE IF NOT EXISTS " . TABLE_PREFIX . "premium_pages (
         id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-        name VARCHAR(255) NOT NULL DEFAULT '',
-        content text NOT NULL DEFAULT '',
-        allowgroups VARCHAR(255) NOT NULL DEFAULT '',
-        fullaccessgroups VARCHAR(255) NOT NULL DEFAULT '',
-        min_posts INT UNSIGNED NOT NULL DEFAULT 0,
-        min_time_last_post INT UNSIGNED NOT NULL DEFAULT 6,
-        min_time_last_post_type VARCHAR(255) NOT NULL DEFAULT 'hour',
-        min_time_register INT UNSIGNED NOT NULL DEFAULT 1,
-        min_time_register_type VARCHAR(255) NOT NULL DEFAULT 'day',
-        max_warn_level INT NOT NULL DEFAULT 0,
+        name VARCHAR(255) NOT NULL,
+        enabled INT UNSIGNED NOT NULL,
+        mycode INT UNSIGNED NOT NULL,
+        content text NULL,
+        allowgroups VARCHAR(255) NOT NULL,
+        fullaccessgroups VARCHAR(255) NOT NULL,
+        min_posts INT UNSIGNED NOT NULL,
+        min_time_last_post INT UNSIGNED NOT NULL,
+        min_time_last_post_type VARCHAR(255) NOT NULL,
+        min_time_register INT UNSIGNED NOT NULL,
+        min_time_register_type VARCHAR(255) NOT NULL,
+        max_warn_level INT NOT NULL,
         PRIMARY KEY (id)
         ) DEFAULT CHARSET=utf8;";
         $db->query($sql);

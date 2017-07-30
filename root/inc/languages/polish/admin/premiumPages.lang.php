@@ -22,24 +22,29 @@
 $l['premiumPagesName'] = 'Strony Premium';
 $l['premiumPagesDesc'] = 'Strony o ograniczonym dostępie.';
 
-$l['premiumPagesAdminList'] = 'Lista stron premium';
-$l['premiumPagesAdminAdd'] = 'Dodaj stronę premium';
-$l['premiumPagesAdminEdit'] = 'Edytuj stronę premium';
+$l['premiumPagesAdminList'] = 'Lista stron';
+$l['premiumPagesAdminEdit'] = 'Edytuj stronę';
 $l['premiumPagesAdminSave'] = 'Zapisz';
 
-$l['premiumPagesAdminInfoAdd'] = 'Strona premium została zapisana';
+$l['premiumPagesAdminInfoSave'] = 'Strona została zapisana';
 $l['premiumPagesAdminInfoNoResults'] = 'Brak stron';
 
 $l['premiumPagesAdminAll'] = 'Wszystkie';
-$l['premiumPagesAdminMinutes'] = 'Minuty';
-$l['premiumPagesAdminHours'] = 'Godziny';
-$l['premiumPagesAdminDays'] = 'Dni';
+$l['premiumPagesTime_' . \premiumPages::TYPE_MINUTE] = 'Minuty';
+$l['premiumPagesTime_' . \premiumPages::TYPE_HOUR] = 'Godziny';
+$l['premiumPagesTime_' . \premiumPages::TYPE_DAY] = 'Dni';
 
 $l['premiumPagesFormData'] = 'Dane';
-$l['premiumPagesFormName'] = 'Nazwa:';
+$l['premiumPagesFormName'] = 'Nazwa';
 $l['premiumPagesFormNameDesc'] = 'Nazwa strony.';
 
-$l['premiumPagesFormContent'] = 'Treść:';
+$l['premiumPagesFormEnabled'] = 'Strona włączona';
+$l['premiumPagesFormEnabledDesc'] = 'Określa czy strona jest włączona.';
+
+$l['premiumPagesFormMycode'] = 'Parsowanie MyCode';
+$l['premiumPagesFormMycodeDesc'] = 'Pozwala na wykorzystanie MyCode na stronie.';
+
+$l['premiumPagesFormContent'] = 'Treść';
 $l['premiumPagesFormContentDesc'] = 'Treść strony.';
 
 $l['premiumPagesFormGroups'] = 'Dozwolone grupy użytkowników';
@@ -48,25 +53,27 @@ $l['premiumPagesFormGroupsDesc'] = 'Dozwolone grupy użytkowników.';
 $l['premiumPagesFormGroupsAllowed'] = 'Grupy bez badania restrykcji';
 $l['premiumPagesFormGroupsAllowedDesc'] = 'Grupy bez badania restrykcji.';
 
-$l['premiumPagesFormMinPosts'] = 'Minimum postów:';
+$l['premiumPagesFormMinPosts'] = 'Minimum postów';
 $l['premiumPagesFormMinPostsDesc'] = 'Minimalna liczba postów użytkownika.';
 
-$l['premiumPagesFormMinTimePost'] = 'Minimalny czas od granicznego postu:';
+$l['premiumPagesFormMinTimePost'] = 'Minimalny czas od granicznego postu';
 $l['premiumPagesFormMinTimePostDesc'] = 'Minimalny czas jaki musi upłynąć od daty napisana granicznego-minimalnego postu przez użytkownika.';
 
 $l['premiumPagesFormMinTimePostType'] = 'Typ minimalnego czasu - post';
 $l['premiumPagesFormMinTimePostTypeDesc'] = 'Typ minimalnego czasu - post.';
 
-$l['premiumPagesFormMinTimeRegister'] = 'Minimalny czas od rejestracji:';
+$l['premiumPagesFormMinTimeRegister'] = 'Minimalny czas od rejestracji';
 $l['premiumPagesFormMinTimeRegisterDesc'] = 'Minimalny czas jaki musi upłynąć od daty rejestracji użytkownika.';
 
 $l['premiumPagesFormMinTimeRegisterType'] = 'Typ minimalnego czasu - rejestracja';
 $l['premiumPagesFormMinTimeRegisterTypeDesc'] = 'Typ minimalnego czasu - rejestracja.';
 
-$l['premiumPagesFormMaxWarn'] = 'Maksymalny poziom ostrzeżenia:';
+$l['premiumPagesFormMaxWarn'] = 'Maksymalny poziom ostrzeżenia';
 $l['premiumPagesFormMaxWarnDesc'] = 'Maksymalny poziom % ostrzeżenia jaki może mieć użytkownik.';
 
 $l['premiumPagesFormEdit'] = 'Edycja';
+$l['premiumPagesFormDelete'] = 'Usuń';
+$l['premiumPagesFormConfirm'] = 'Czy na pewno chcesz usunąć stronę?';
 
 $l['premiumPagesHeaderName'] = 'Nazwa';
 $l['premiumPagesHeaderMinPosts'] = 'Min. postów';

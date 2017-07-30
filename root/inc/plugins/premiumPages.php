@@ -45,7 +45,7 @@ function premiumPages_info()
         "website" => "https://tkacz.pro",
         "author" => 'Lukasz Tkacz',
         "authorsite" => "https://tkacz.pro",
-        "version" => "1.0",
+        "version" => "1.1",
         "compatibility" => "18*",
         'codename' => 'premium_pages',
     );
@@ -91,6 +91,15 @@ function premiumPages_deactivate()
 // Plugin Class
 class premiumPages
 {
+    const TYPE_MINUTE = 100;
+    const TYPE_HOUR = 200;
+    const TYPE_DAY = 300;
+
+    public static $TIME_TYPES = [
+        self::TYPE_MINUTE => 60,
+        self::TYPE_DAY => 3600,
+        self::TYPE_HOUR => 86400,
+    ];
 
     public static function adminLink(&$sub_menu)
     {
