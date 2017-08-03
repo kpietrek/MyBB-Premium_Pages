@@ -222,8 +222,8 @@ function premiumPagesFilterInput()
     $mybb->input['min_time_last_post'] = (!empty($mybb->input['min_time_last_post'])) ? (int) $mybb->input['min_time_last_post'] : 0;
     $mybb->input['min_time_register'] = (!empty($mybb->input['min_time_register'])) ? (int) $mybb->input['min_time_register'] : 0;
     $mybb->input['max_warn_level'] = (!empty($mybb->input['max_warn_level'])) ? (int) $mybb->input['max_warn_level'] : 0;
-    $mybb->input['enabled'] = (!empty($mybb->input['min_posts'])) ? (int) $mybb->input['enabled'] : 0;
-    $mybb->input['mycode'] = (!empty($mybb->input['min_posts'])) ? (int) $mybb->input['mycode'] : 0;
+    $mybb->input['enabled'] = (!empty($mybb->input['enabled'])) ? (int) $mybb->input['enabled'] : 0;
+    $mybb->input['mycode'] = (!empty($mybb->input['mycode'])) ? (int) $mybb->input['mycode'] : 0;
 
     if (!empty($mybb->input['allowgroups']) && is_array($mybb->input['allowgroups'])) {
         $mybb->input['allowgroups'] = array_map('intval', $mybb->input['allowgroups']);
